@@ -1,7 +1,8 @@
 **UniOrda** - DataHub университетов РК!
 
 Проект был выполнен командой: "Два с половиной программиста"
-![CSS Tailwind](https://img.shields.io/badge/Layout_HTML-orange)
+![CSS Tailwind](https://img.shields.io/badge/Layout-HTML-orange)
+
 
 
 
