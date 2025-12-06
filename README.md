@@ -1,6 +1,6 @@
 **UniOrda** - Инновационный DataHub университетов РК!
 
-![Front](https://img.shields.io/badge/Front-end-HTML,TAILWIND,Javascript-yellow-green?style=for-the-badge)
+![Front](https://img.shields.io/badge/Frontend-HTML,TAILWIND,Javascript-yellow-green?style=for-the-badge)
 
 
 ## **Проблема, которую мы решаем**
@@ -11,6 +11,7 @@
 | Data \ Back-end   | Design         | Full-stack   |
 | ----------------- | -------------- | ------------ |
 | Денгелов Тамерлан | Темирхан Жуман | Гордеев Илья |
+
 
 
 
