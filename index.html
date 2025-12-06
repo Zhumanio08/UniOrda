@@ -6,18 +6,174 @@
     <title>Главная | UniOrda</title>
     <link rel="stylesheet" href="src/dist/styles.css">
     <link rel="icon" href="logo.png">
+    
 </head>
 <body>
+  <header id="section1" class=" fixed top-0 left-0 w-full z-50 transition-all duration-[1s]">
+      <div class="flex items-center justify-between px-[20px] py-[10px] md:px-[30px] md:py-[20px] duration-[1s] bg-neutral-100 ">
+        <div class="flex flex-col">
+          <a href="index" class="flag"><h1 class="text-2xl md:text-5xl text-strong font-bold text-neutral-700">UNI<b class="text-amber-400">ORDA</b></h1></a>
+          <p class=" hidden md:block md:text-2xl text-strong font-bold text-neutral-700">“Твой надежный ключ к получению образования.”</p>
+        </div>
+        <button id="burger" class="flex flex-col gap-1">
+          <img src="assets/icons/menu.svg" alt="" loading="lazy">
+        </button>
+      </div>
 
-    <div class="h-[200px] w-[500px]">
-        <p class="text-blue-600 font-family:montserrat-bold">sdasdsa</p>
+      <nav id="menu" class="overflow-hidden max-h-0   hidden flex flex-col
+                           transition-all duration-[1s]">
+        <a href="about-us" class="p-[20px] block text-neutral-50 text-base sm:text-lg md:text-xl font-mont font-semibold transition-linear">О школе & Поступление</a>
+        
+
+
+        
+         <!-- Dropdown внутри бургера -->
+        <div class="relative w-full">
+          <!-- Кнопка -->
+          <button id="dropdownBtn" 
+            class="flex w-full items-center font-mont font-semibold justify-between p-[20px] text-left text-base sm:text-lg md:text-xl font-medium text-blue-600 text-white bg-white bg-transparent ">
+            Важные темы
+            <svg class="size-5.5 ml-2 transition-transform duration-200 rotate-90" 
+                 id="dropdownArrow" 
+                 xmlns="http://www.w3.org/2000/svg" 
+                 fill="none" viewBox="0 0 24 24" 
+                 stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3.2" 
+                    d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+        
+          <!-- Выпадающий список -->
+          <div id="dropdownMenu" 
+               class="hidden flex flex-col bg-blue-700 text-neutral-50 text-base sm:text-lg md:text-xl font-mont font-semibold">
+            <a class="px-[50px] py-[20px] block transition-linear" href="nutrition">Питание в школе</a>
+            <a class="px-[50px] py-[20px] block transition-linear" href="educational_working">Воспитательная работа</a>
+            <a class="px-[50px] py-[20px] block transition-linear" href="extracurricular_activities">Внеурочная деятельность</a>
+            <a class="px-[50px] py-[20px] block transition-linear" href="inclusive_edu">Инклюзивное образование</a>
+            <a class="px-[50px] py-[20px] block transition-linear" href="self-government">Школьное самоуправление</a>
+            <a class="px-[50px] py-[20px] block transition-linear" href="for_parents">Родителям</a>
+          </div>
+        </div>
+
+        <script src="src/js/dropdownMenu.js"></script>
+
+
+
+
+
+        <a href="contacts" class="p-[20px] block text-neutral-50 text-base sm:text-lg md:text-xl font-mont font-semibold transition-linear">Контакты</a>
+        <a class="p-[20px] block text-neutral-50 text-base sm:text-lg md:text-xl font-mont font-semibold transition-linear" href="https://kuula.co/share/collection/7DwGq?logo=1&info=1&fs=1&vr=0&sd=1&thumbs=1&margin=1&inst=ru">3D тур</a>
+        <div class="relative language-selector w-[100vw]">
+          <!-- Кнопка -->
+          <button class="p-[20px] current-lang flex items-center justify-between gap-1 text-white font-mont font-semibold text-base sm:text-lg md:text-xl w-[100%]" >
+            Русский язык
+             <span class="material-symbols-outlined arrow">arrow_back_ios</span>
+          </button>
+        
+          <!-- Выпадающее меню -->
+          <ul class="lang-dropdown  hidden  z-0 mt-[-1px] z-0 bg-blue-700 ">
+            
+            <li data-file="kz/index" class="text-base sm:text-lg md:text-xl font-mont font-semibold
+              text-base  px-[50px] py-[20px]  transition-all duration-[1s]">Казахский язык</li>
+            <li data-file="en/index" class="text-base sm:text-lg md:text-xl font-mont font-semibold
+              text-base  px-[50px] py-[20px]  transition-all duration-[1s] ">Английский язык</li>
+          </ul>
+        </div>
+        <script src="src/js/burger-language.js"></script>
+      </nav>
+    </header>
+  <section>
+  <img src="assets/images/bg.png" alt="" class="h-[200px] w-[100%] md:h-auto">
+  <div class="flex flex-col gap-[20px] items-center relative bottom-[100px]">
+    <div class="bg-[#3F3F46] w-[75%] h-[auto] text-white p-[25px] pt-[100px] pb-[100px] transition duration-300 shadow-none hover:shadow-xl hover:bg-blue-600 hover:text-neutral-50 hover:cursor-pointer ">
+      
+      <a href="" class="relative">
+      <h1 class="text-2xl md:text-3xl font-bold">Финансирование</h1>
+      <p class="text-lg md:font-normal md:text-xl w-[75%] pt-[20px]">Как оплатить за обучение? Какие доступны льготы? Какие существуют стипендии?</p>
+      <button class="absolute right-0"><img src="assets/icons/left.svg" alt=""></button>
+      </a>
     </div>
-    <!-- <div id="preloader" class="flex flex-col items-center justify-center">
-    <div>
-      <div class="spinner"></div>
+    <div class="bg-[#3F3F46] w-[75%] h-[auto] text-white p-[25px] pt-[100px] pb-[100px] transition duration-300 shadow-none hover:shadow-xl hover:bg-blue-600 hover:text-neutral-50 hover:cursor-pointer ">
+      
+      <a href="" class="relative">
+      <h1 class="text-2xl md:text-3xl font-bold">Программы</h1>
+      <p class="text-lg md:font-normal md:text-xl w-[75%] pt-[20px]">Какие существуют программы? Какие мне больше подойдут? Какие нужны связки предметов?</p>
+      <button class="absolute right-0"><img src="assets/icons/left.svg" alt=""></button>
+      </a>
+    </div>
+    <div class="bg-[#3F3F46] w-[75%] h-[auto] text-white p-[25px] pt-[100px] pb-[100px] transition duration-300 shadow-none hover:shadow-xl hover:bg-blue-600 hover:text-neutral-50 hover:cursor-pointer ">
+      
+      <a href="" class="relative">
+      <h1 class="text-2xl md:text-3xl font-bold">Как подать заявку?</h1>
+      <p class="text-lg md:font-normal md:text-xl w-[75%] pt-[20px]">Что необходимо сделать? Какие документы нужны? Какие сроки?</p>
+      <button class="absolute right-0"><img src="assets/icons/left.svg" alt=""></button>
+      </a>
     </div>
   </div>
-  <script src="src/js/preloader.js"></script> -->
+ 
+  </section>
+ <article id="section" class="bg-neutral-50 w-full h-auto flex flex-col justify-center items-start   gap-[10px] px-[40px] py-[50px]   sm:gap-[20px] sm:px-[70px] sm:py-[80px] md:gap-[30px] md:px-[90px] md:py-[100px] lg:gap-[40px] lg:px-[100px] lg:py-[110px] xl:gap-[40px] xl:px-[220px] xl:py-[110px]">
+      <div class="flex gap-[10px] sm:gap-[20px] md:gap-[30px] lg:gap-[40px] xl:gap-[40px]">
+        <img loading="lazy" src="assets/icons/book.svg" alt="" class="  sm:w-[92px] sm:h-[69px] md:w-[96px] md:h-[78px] lg:w-[110px] lg:h-[95px] xl:w-[170px] xl:h-[140px]">
+        <div>
+          <span class="font-family:montserrat-bold text-neutral-700 font-mont font-bold    text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-7xl">Твой университет, </span></br>
+          <span class="montserrat-bold text-amber-400 font-mont font-bold   text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-7xl">твой выбор</span>
+          <!-- Используется от mobile-horyz и выше -->
+          <div class="hidden sm:block sm:mt-[10px] md:block md:mt-[20px] lg:block lg:mt-[20px] xl:mt-[40px]">
+            <p class="font-mont-alt font-medium text-zinc-700   text-base w-[280px] sm:text-lg sm:w-[100%] sm:mb-[10px] md:text-xl md:w-[100%] md:mb-[20px] lg:text-2xl lg:w-[100%] lg:mb-[20px] xl:text-2xl xl:w-[100%] xl:mb-[40px]">Этот вебсайт собирает полную информацию о всех казахстанских университетах. Здесь представлены программы обучения, требования к абитуриентам, стоимость обучения, стипендии, рейтинги и студенческая жизнь. Платформа помогает школьникам и выпускникам легко сравнивать вузы и выбирать подходящий для себя вариант.</p>
+            <a class="hover:cursor-pointer hover:text-amber-600 text-amber-400 font-mont-alt font-semibold   underline text-base md:text-2xl" href="about-us">Искать университеты</a>
+          </div>
+        </div>
+      </div>
+      <!-- Используется только для mobile-vert -->
+      <div class="my-[10px] sm:hidden">
+        <p class="font-mont-alt font-medium text-zinc-700   text-base w-[100%] mb-[10px]">Этот вебсайт собирает полную информацию о всех казахстанских университетах. Здесь представлены программы обучения, требования к абитуриентам, стоимость обучения, стипендии, рейтинги и студенческая жизнь. Платформа помогает школьникам и выпускникам легко сравнивать вузы и выбирать подходящий для себя вариант.</p>
+        <a class="hover:cursor-pointer hover:text-amber-600 text-amber-400 font-mont-alt font-semibold   underline text-base md:text-2xl" href="about-us">Искать университеты</a>
+      </div>
+    </article>
+
+  <section class="scroll-anim flex justify-center items-center mt-[40px] md:mt-[80px] xl:mt-[100px]">
+    <img loading="lazy" src="assets/images/w-bg2.svg" alt="" class="select-none pointer-events-none" draggable="false" oncontextmenu="return false">
+    </section>
+
+  <section class="flex flex-col items-center">
+    <div class="flex flex-col justify-center items-center">
+      <h1 class="text-amber-400 text-9xl font-bold">УЧЕБА</h1>
+      <p class="text-3xl text-neutral-700 font-bold">в Казахстане это про</p>
+    </div>
+    <div class="mt-[50px] grid grid-cols-1 gap-4 md:grid md:grid-cols-2 md:gap-6">
+      <div class="flex justify-center items-center font-medium gap-[10px]">
+        <img src="assets/icons/1.svg" alt="">
+        <p class="text-3xl text-neutral-700 w-[50%] f">Качественное образование</p>
+      </div>
+      <div class="flex justify-center items-center font-medium gap-[10px]">
+        <img src="assets/icons/2.svg" alt="">
+        <p class="text-3xl text-neutral-700 w-[50%] f">Доступность и государственные гранты</p>
+      </div>
+      <div class="flex justify-center items-center font-medium gap-[10px]">
+        <img src="assets/icons/3.svg" alt="">
+        <p class="text-3xl text-neutral-700 w-[50%] f">Международные возможности</p>
+      </div>
+      <div class="flex justify-center items-center font-medium gap-[10px]">
+        <img src="assets/icons/4.svg" alt="">
+        <p class="text-3xl text-neutral-700 w-[50%] f">Разнообразие программ и направлений</p>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="scroll-anim w-[100%] mt-[20px] relative">
+
+      <section class="flex flex-col justify-start items-center">
+        <img loading="lazy" src="assets/images/Wave.svg" alt="" class=" w-[101vw] block" class="select-none pointer-events-none" draggable="false" oncontextmenu="return false">
+        <div class="bg-neutral-700 p-[15px] sm:p-[70px] lg:px-[195px] w-[100%]">
+          <div class="flex justify-start items-center">
+            <a href="index" class="cursor-pointer"><img src="logo.svg" alt=""></a>
+            <p class="font-mont-alt font-regular text-neutral-50 text-base w-[100%] md:w-[30%] sm:text-lg md:text-xl lg:text-2xl xl:text-2xl">«Учиться — значит открывать мир каждый день. Вместе мы создаём будущее уже сегодня.»</p>
+          </div>
+        </div>
+      </section>
+    </footer>
 </body>
 
 </html>

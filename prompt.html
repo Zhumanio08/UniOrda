@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/dist/styles.css">
+</head>
+<body>
+    <header id="section1" class=" fixed top-0 left-0 w-full z-50 transition-all duration-[1s]">
+      <div class="flex items-center justify-between px-[20px] py-[10px] md:px-[30px] md:py-[20px] duration-[1s] bg-neutral-100 ">
+        <div class="flex flex-col">
+          <a href="index" class="flag"><h1 class="text-2xl md:text-5xl text-strong font-bold text-neutral-700">UNI<b class="text-amber-400">ORDA</b></h1></a>
+          <p class=" hidden md:block md:text-2xl text-strong font-bold text-neutral-700">“Твой надежный ключ к получению образования.”</p>
+        </div>
+        <button id="burger" class="flex flex-col gap-1">
+          <img src="assets/icons/menu.svg" alt="" loading="lazy">
+        </button>
+      </div>
+
+      <nav id="menu" class="overflow-hidden max-h-0   hidden flex flex-col
+                           transition-all duration-[1s]">
+        <a href="about-us" class="p-[20px] block text-neutral-50 text-base sm:text-lg md:text-xl font-mont font-semibold transition-linear">О школе & Поступление</a>
+        
+
+
+        
+         <!-- Dropdown внутри бургера -->
+        <div class="relative w-full">
+          <!-- Кнопка -->
+          <button id="dropdownBtn" 
+            class="flex w-full items-center font-mont font-semibold justify-between p-[20px] text-left text-base sm:text-lg md:text-xl font-medium text-blue-600 text-white bg-white bg-transparent ">
+            Важные темы
+            <svg class="size-5.5 ml-2 transition-transform duration-200 rotate-90" 
+                 id="dropdownArrow" 
+                 xmlns="http://www.w3.org/2000/svg" 
+                 fill="none" viewBox="0 0 24 24" 
+                 stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3.2" 
+                    d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+        
+          <!-- Выпадающий список -->
+          <div id="dropdownMenu" 
+               class="hidden flex flex-col bg-blue-700 text-neutral-50 text-base sm:text-lg md:text-xl font-mont font-semibold">
+            <a class="px-[50px] py-[20px] block transition-linear" href="nutrition">Питание в школе</a>
+            <a class="px-[50px] py-[20px] block transition-linear" href="educational_working">Воспитательная работа</a>
+            <a class="px-[50px] py-[20px] block transition-linear" href="extracurricular_activities">Внеурочная деятельность</a>
+            <a class="px-[50px] py-[20px] block transition-linear" href="inclusive_edu">Инклюзивное образование</a>
+            <a class="px-[50px] py-[20px] block transition-linear" href="self-government">Школьное самоуправление</a>
+            <a class="px-[50px] py-[20px] block transition-linear" href="for_parents">Родителям</a>
+          </div>
+        </div>
+
+        <script src="src/js/dropdownMenu.js"></script>
+
+
+
+
+
+        <a href="contacts" class="p-[20px] block text-neutral-50 text-base sm:text-lg md:text-xl font-mont font-semibold transition-linear">Контакты</a>
+        <a class="p-[20px] block text-neutral-50 text-base sm:text-lg md:text-xl font-mont font-semibold transition-linear" href="https://kuula.co/share/collection/7DwGq?logo=1&info=1&fs=1&vr=0&sd=1&thumbs=1&margin=1&inst=ru">3D тур</a>
+        <div class="relative language-selector w-[100vw]">
+          <!-- Кнопка -->
+          <button class="p-[20px] current-lang flex items-center justify-between gap-1 text-white font-mont font-semibold text-base sm:text-lg md:text-xl w-[100%]" >
+            Русский язык
+             <span class="material-symbols-outlined arrow">arrow_back_ios</span>
+          </button>
+        
+          <!-- Выпадающее меню -->
+          <ul class="lang-dropdown  hidden  z-0 mt-[-1px] z-0 bg-blue-700 ">
+            
+            <li data-file="kz/index" class="text-base sm:text-lg md:text-xl font-mont font-semibold
+              text-base  px-[50px] py-[20px]  transition-all duration-[1s]">Казахский язык</li>
+            <li data-file="en/index" class="text-base sm:text-lg md:text-xl font-mont font-semibold
+              text-base  px-[50px] py-[20px]  transition-all duration-[1s] ">Английский язык</li>
+          </ul>
+        </div>
+        <script src="src/js/burger-language.js"></script>
+      </nav>
+    </header>
+    <img src="assets/images/bg.png" alt="" class="h-[200px] w-[100%] md:h-auto">
+
+    <!-- Название Университета -->
+    <h1>Kazakh British Technical University</h1> 
+    <!-- Год основания -->
+    <h1>Год основания: 2001г.</h1>
+    <!-- Кол-во школ -->
+    <h1>Кол-во направлений(школ): 10</h1>
+
+    <!-- Об университете -->
+    <p>КБТУ — технический университет международного уровня, работающий в партнёрстве с ведущими мировыми вузами и крупными компаниями.</p>
+    Он делает упор на научные исследования, подготовку высококвалифицированных специалистов и международное сотрудничество. Университет активно развивает технологии и бизнес-направления, поддерживает инновационные проекты и демонстрирует высокие показатели трудоустройства выпускников (более 90%).
+    КБТУ входит в топ-5 вузов Казахстана и 30% лучших университетов региона по версии QS. Его программы имеют международную аккредитацию (ABET, ACBSP, IQAA, CIMA, ACCA, CFA). Преподают местные и иностранные специалисты, а студенты работают в современных лабораториях с сильными научными школами.</p>
+
+    <!-- Ссылка на 3D тур при наличии, необходимо условие. Если нет ссылки, то и нет кнопки -->
+    <button><a href="">3D тур</a></button>
+
+    <div>
+        <h1>I. История Университета</h1>
+        <!-- История -->
+        <p></p>
+    </div>
+    <div>
+        <h1>II. Миссии</h1>
+        <!-- История -->
+        <p></p>
+    </div>
+    <div>
+        <h1>III. Достижения</h1>
+        <!-- История -->
+        <p></p>
+    </div>
+</body>
+</html>
