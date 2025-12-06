@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="src/dist/styles.css">
+    <title>Document</title>
 </head>
 <body>
     <header id="section1" class=" fixed top-0 left-0 w-full z-50 transition-all duration-[1s]">
@@ -40,36 +40,18 @@
     });
   </script>
     </header>
-    <img src="assets/images/bg.png" alt="" class="h-[200px] w-[100%] md:h-auto">
+  <section>
+  <div class="w-[100%] md:h-auto bg-amber-400 flex flex-col items-center justify-center pt-[200px]">
+    <h1 class="text-white text-9xl font-mont">UniFinder</h1>
+    <p class="text-white text-2xl">“Найдите и исследуйте университет, который вам больше всего по душе.”</p>
 
-    <!-- Название Университета -->
-    <h1>Kazakh British Technical University</h1> 
-    <h1>I. Процесс поступления</h1>
-    
-    <div>
-      <div>
-        <h1>Сроки(для поступающих на платное отделение)</h1>
-        <!-- Сроки -->
-        <p></p>
-      </div>
-       <div>
-        <h1>Сроки(для поступающих на государственный грант)</h1>
-        <!-- Сроки -->
-        <p></p>
-      </div>
-       <div>
-        <h1>После школы</h1>
-        <!-- Информация -->
-        <p></p>
-      </div>
-       <div>
-        <h1>После колледжа</h1>
-        <!-- Информация -->
-        <p></p>
-      </div>
-    </div>
-    <div>
-      <!-- Тут программа, под ним описание. Нужно сделать так, чтобы кол-во программ зависело от кол-во программ, написанных в БД -->
-    </div>
+    <form id="searchForm" class="bg-white font-mont pl-[20px] pr-[20px] p-[10px]">
+  <input type="text" id="searchInput" placeholder="Введите запрос" class="font-mont">
+  <button type="submit">Найти</button>
+    </form>
+  </div>
+  
+<div id="results"></div>
+
 </body>
 </html>

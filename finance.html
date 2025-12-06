@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Финансирование | UNIORDA</title>
+    <link rel="stylesheet" href="src/dist/styles.css">
+</head>
+<body>
+
+<header id="section1" class=" fixed top-0 left-0 w-full z-50 transition-all duration-[1s]">
+      <nav class="bg-white shadow-md fixed w-full z-50 h-[100px] pt-[20px]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16 items-center">
+        <div class="flex-shrink-0 text-xl font-bold"><a href="index.html" class="flag"><h1 class="text-2xl md:text-5xl text-strong font-bold text-neutral-700">UNI<b class="text-amber-400">ORDA</b></h1></a>
+          <p class=" hidden md:block md:text-2xl text-strong font-bold text-neutral-700">“Твой надежный ключ к получению образования.”</p></div>
+
+        <!-- Бургер кнопка (всегда видна) -->
+        <div class="flex items-center">
+          <button id="burger" class="focus:outline-none flex flex-col justify-center items-center gap-1">
+            <img src="assets/icons/menu.svg" alt="">
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Меню -->
+    <div id="mobileMenu" class="hidden px-4 pb-4 bg-white shadow-md py-[40px]">
+      <a href="finance.html" class="block py-2 text-zinc-700 hover:text-blue-700 transition duration-300 font-mont text-2xl">Финансирование</a>
+      <a href="unifinder.html" class="block py-2 text-zinc-700 hover:text-blue-700 transition duration-300 font-mont text-2xl">Поиск университетов</a>
+      <a href="#" class="block py-2 text-zinc-700 hover:text-blue-700 transition duration-300 font-mont text-2xl">Как подать заявку?</a>
+    </div>
+  </nav>
+
+  <script>
+    const burger = document.getElementById('burger');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    burger.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+    </header>
+    <img src="assets/images/bg.png" alt="" class="h-[200px] w-[100%] md:h-auto">
+     <main class="flex flex-col items-center">
+    <section class="bg-neutral-50 w-full h-auto flex flex-col justify-start items-start gap-[10px] px-[40px] py-[50px]   sm:gap-[20px] sm:px-[70px] sm:py-[80px] md:gap-[30px] md:px-[90px] md:py-[100px] lg:gap-[40px] lg:px-[100px] lg:py-[110px] xl:gap-[40px] xl:px-[220px] xl:py-[110px]">
+        <div class="flex gap-[10px] justify-start items-start sm:gap-[20px] md:gap-[30px] lg:gap-[40px] xl:gap-[40px]">
+          <img src="assets/icons/f.svg" alt="" class="w-[52px] sm:w-[93px] sm:h-[93px] md:w-[100px] md:h-[100px] lg:w-[126px] lg:h-[126px] xl:w-[194px]">
+          <div>
+            <span class="font-mont font-bold text-neutral-700 font-mont font-bold   text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-7xl">УЧЕБА</span></br>
+            <span class="montserrat-bold text-amber-400 font-mont font-bold   text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-7xl">БЕЗ БАРЬЕРА</span>
+            <div class="hidden sm:block sm:mt-[10px] md:block md:mt-[20px] lg:block lg:mt-[20px] xl:mt-[40px]">
+              <p class="font-mont-alt font-medium text-zinc-700   text-base w-[280px] sm:text-lg sm:w-[100%] sm:mb-[10px] md:text-xl md:w-[100%] md:mb-[20px] lg:text-2xl lg:w-[100%] lg:mb-[20px] xl:text-2xl xl:w-[100%] xl:mb-[40px]">Государство выделяет образовательные гранты — бюджетные места, за счёт которых вуз «берёт на себя» расходы на твоё обучение.Есть несколько типов грантов/грантовых программ: «общегосударственные», «целевые» (для дефицитных профессий/отраслей), гранты, предоставляемые местными органами (например, акиматами), гранты от вузов (ректорские), а также — гранты/стипендии от фондов и частных организаций. Для некоторых категорий (например, сельская молодёжь, дети‑сироты, люди с инвалидностью и др.) могут действовать квоты и льготы — при равных баллах конкуренция идёт с учётом этих льгот.</p>
+            </div>
+          </div>
+        </div>
+        <div class="my-[10px] sm:hidden">
+          <p class="font-mont-alt font-medium text-zinc-700   text-base w-[100%] mb-[10px]">Государство выделяет образовательные гранты — бюджетные места, за счёт которых вуз «берёт на себя» расходы на твоё обучение.Есть несколько типов грантов/грантовых программ: «общегосударственные», «целевые» (для дефицитных профессий/отраслей), гранты, предоставляемые местными органами (например, акиматами), гранты от вузов (ректорские), а также — гранты/стипендии от фондов и частных организаций. Для некоторых категорий (например, сельская молодёжь, дети‑сироты, люди с инвалидностью и др.) могут действовать квоты и льготы — при равных баллах конкуренция идёт с учётом этих льгот.</p>
+        </div>
+    </section>
+
+
+    
+    <section class="flex flex-col justify-center items-center mt-[50px]">
+      <h1 class="font-mont font-medium text-amber-400 text-8xl">ПРИСУЖДЕНИЕ ГРАНТА</h1>
+      <p class="font-mont-alt font-medium text-zinc-700 text-xl w-[50%]">Основной вход на грант — через сдачу национального экзамена ЕНТ (или профильного тестирования / комплексного теста, если речь о магистратуре или докторантуре). Баллы, которые требуются для гранта, зависят от специальности, конкурсного спроса и количества бюджетных мест — конкретное «проходное» значение меняется каждый год. Для некоторых групп (сельская молодёжь, льготники) действуют отдельные квоты — то есть при равных баллах у льготников может быть преимущество.</p>
+    </section>
+
+    <article class="scroll-anim z-1 bg-neutral-50 w-[100%] flex flex-col justify-center  items-center mt-[50px] p-[50px] md:p-[70px]">
+      <div class="flex items-end      gap-[10px]">
+          <img src="assets/icons/block.svg" alt="" class=" w-[52px] h-[65px] sm:w-[92px] sm:h-[69px] md:w-[96px] md:h-[78px] lg:w-[110px] lg:h-[95px] xl:w-[170px] xl:h-[140px]">
+          <h1 class="font-family:montserrat-bold text-neutral-700 font-mont font-bold    text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-7xl">НИ ШАГУ</br>
+          <bold class="font-bold text-amber-400">НАЗАД.</bold></h1>   
+      </div>
+      <p class=" text-center font-mont-alt font-medium text-zinc-700 mt-[10px]  text-base w-[100%] sm:text-lg sm:w-[100%] sm:mt-[10px] md:text-xl md:w-[100%] md:mt-[20px] lg:text-2xl lg:w-[100%] lg:mt-[20px] xl:text-2xl xl:w-[100%] xl:mt-[40px]">
+       Иди к своей цели каждый день,<br> не сдавайся перед трудностями, верь в себя —</br> и успех не заставит себя ждать.</p>
+    
+      <div class="grid grid-rows-1 grid-cols-1 gap-[10px] mt-[30px] md:grid-cols-3 ">
+        <img src="assets/images/image1A.png" alt="" class="w-[1fr] scroll-anim">
+        <img src="assets/images/image1B.png" alt="" class="w-[1fr] scroll-anim">
+        <img src="assets/images/image1C.png" alt="" class="w-[1fr] scroll-anim">
+      </div>
+
+    </article>
+    <section class="scroll-anim p-[50px] flex flex-col justify-center items-start">
+      <h1 class="text-8xl font-mont text-amber-400 text-bold">СТИПЕНДИИ НА</br> МОМЕНТ 2025 ГОДА</h1>
+      <div class="mt-[30px] border-l-4 border-amber-400 px-[20px]">
+        <p class="font-mont text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl"><b class="text-amber-400 text-bold">Бакалавр (общие специальности)</b> ~ 52 372 тенге</p>
+        <p class="font-mont text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl"><b class="text-amber-400 text-bold">Бакалавр (медицинские и педагогические)</b> ~ 84 000 тенге</p>
+        <p class="font-mont text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl"><b class="text-amber-400 text-bold">Магистратура</b> ~ 117 098 тенге</p>
+        <p class="font-mont text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl"><b class="text-amber-400 text-bold">Докторантура</b> ~ 262 500 тенге</p>
+      </div>
+    </section>
+
+
+    
+
+    
+
+  
+
+
+</main>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <!-- <script>console.log("Lenis работает?", typeof Lenis);</script> -->
+  <script src="src/js/scroll.js" defer></script>
+</body>
+</html>
